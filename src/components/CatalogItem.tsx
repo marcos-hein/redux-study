@@ -26,7 +26,7 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
         Comprar
       </button>
     </article>
-  )
+  );
 }
 
 export default CatalogItem;

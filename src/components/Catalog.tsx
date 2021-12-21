@@ -1,8 +1,7 @@
-import api from '../services/api'
-import { useEffect, useState } from "react"
-import { useDispatch } from "react-redux";
+import api from "../services/api";
+import { useEffect, useState } from "react";
 import { IProduct } from "../store/modules/cart/types";
-import CatalogItem from './CatalogItem'
+import CatalogItem from "./CatalogItem";
 
 export const Catalog: React.FC = () => {
   const [catalog, setCatalog] = useState<IProduct[]>([]);
@@ -21,5 +20,5 @@ export const Catalog: React.FC = () => {
         <CatalogItem key={product.id} product={product}/>
       ))}
     </main>
-  )
+  );
 }
